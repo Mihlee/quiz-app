@@ -3,48 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevQuiz - Learn & Play</title>
+    <title>DevQuiz - Learn Smarter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">DevQuiz!</div>
+        <div class="logo">DevQuiz 🦉</div>
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Explore</a>
-            <a href="https://github.com text" target="_blank">GitHub</a>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
         </div>
+        <button class="nav-cta" id="nav-start-btn">Get Started</button>
     </nav>
 
-    <main class="main-wrapper">
-        
-        <div id="home-container" class="hero-section">
-            <div class="hero-left">
-                <h1>DevQuiz app: quiz and trivia game for Developers</h1>
-                <p>Test your skills, prep for tech interviews, and learn web development with the DevQuiz app. Make your study sessions or tech meetups more engaging!</p>
-                <button id="start-game-btn" class="cta-btn">Start Playing Now</button>
-            </div>
-            <div class="hero-right">
-                <div class="feature-card">
-                    <div class="card-graphic">🧑‍💻</div>
-                    <h3>Ready to Level Up?</h3>
-                    <p>50 high-value interview questions covering HTML, CSS, JavaScript, and Git.</p>
+    <div class="main-layout">
+
+        <div id="landing-page-view">
+            
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <h1>Learn <span class="highlight">smarter</span> with DevQuiz</h1>
+                    <p>The ultimate browser-based trivia trainer for aspiring web engineers. Test your skills, prepare for tech interviews, and master frontend core concepts through an interactive game format.</p>
+                    <button id="start-game-btn" class="cta-btn">Start playing now →</button>
+                    <span class="sub-text">⚡ Free & open-source • No account needed</span>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div id="quiz-container" class="quiz-container hide">
-            <div id="question-container">
-                <h2 id="question">Question text appears here</h2>
-                <div id="answer-buttons" class="btn-grid">
+            <section id="about" class="about-section">
+                <h2>Everything you need to know about DevQuiz</h2>
+                <p class="about-lead">DevQuiz was designed as an open-access gamified sandbox to bridge the gap between technical theory and fast-paced assessment recall. Whether you're refreshing your knowledge before a technical screen or reinforcing daily coding lessons, this application covers foundational rules across the entire frontend engineering spectrum.</p>
+            </section>
+
+            <section id="features" class="features-section">
+                <h2>Comprehensive Platform Features</h2>
+                <div class="features-grid">
+                    <div class="feat-card">
+                        <div class="icon">🧑‍💻</div>
+                        <h3>50 Interview Prep Qs</h3>
+                        <p>Curated concepts targeting core HTML5 structural design, semantic elements, accessibility, forms, and modern layout structures.</p>
                     </div>
-            </div>
-            <button id="next-btn" class="next-btn hide">Next Question</button>
+                    <div class="feat-card">
+                        <div class="icon">🎨</div>
+                        <h3>Modern CSS Layouts</h3>
+                        <p>Deep dives into CSS Flexbox rules, cascading priority stacks, specificities, variables, transitions, and responsive scaling metrics.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="icon">🚀</div>
+                        <h3>Advanced JS Core</h3>
+                        <p>Master execution scopes, array functions, arrow syntax, DOM manipulation hooks, asynchronous events, and runtime data formats.</p>
+                    </div>
+                    <div class="feat-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Git & Web Protocol</h3>
+                        <p>Practice common repository workflows, tracking branches, staging commits, HTTP status codes, and server data exchanges like JSON.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works" class="how-section">
+                <h2>How It Works</h2>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h4>Launch Game</h4>
+                        <p>Click any launch button to transition directly from this information panel into the live assessment wrapper.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h4>Select Solutions</h4>
+                        <p>Review the active prompt text and pick your answer. Correct choices flash green; incorrect choices reveal the solution outline.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h4>Check Metrics</h4>
+                        <p>Progress sequentially through all 50 entries to generate your complete performance summary and review scoreboard metrics.</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-    </main>
+        <div id="quiz-container-view" class="quiz-container hide">
+    <div id="question-container">
+        <h2 id="question">Question loading...</h2>
+        <div id="answer-buttons" class="btn-grid">
+            </div>
+    </div>
+    
+    <div id="feedback-message" class="feedback-text hide"></div>
 
-    <script src="script.js"></script>
+    <button id="next-btn" class="next-btn hide">Next Question</button>
+</div>
+
+    </div>
+
 </body>
+<script src="script.js"></script>
 </html>
