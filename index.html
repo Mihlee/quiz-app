@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Quiz App</title>
+    <title>DevQuiz - Learn & Play</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <div id="question-container">
-            <h2 id="question">Question text appears here</h2>
-            <div id="answer-buttons" class="btn-grid">
-                </div>
+
+    <nav class="navbar">
+        <div class="logo">DevQuiz!</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="https://github.com text" target="_blank">GitHub</a>
         </div>
-        <button id="next-btn" class="next-btn hide">Next Question</button>
-    </div>
+    </nav>
+
+    <main class="main-wrapper">
+        
+        <div id="home-container" class="hero-section">
+            <div class="hero-left">
+                <h1>DevQuiz app: quiz and trivia game for Developers</h1>
+                <p>Test your skills, prep for tech interviews, and learn web development with the DevQuiz app. Make your study sessions or tech meetups more engaging!</p>
+                <button id="start-game-btn" class="cta-btn">Start Playing Now</button>
+            </div>
+            <div class="hero-right">
+                <div class="feature-card">
+                    <div class="card-graphic">🧑‍💻</div>
+                    <h3>Ready to Level Up?</h3>
+                    <p>50 high-value interview questions covering HTML, CSS, JavaScript, and Git.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="quiz-container hide">
+            <div id="question-container">
+                <h2 id="question">Question text appears here</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+            </div>
+            <button id="next-btn" class="next-btn hide">Next Question</button>
+        </div>
+
+    </main>
 
     <script src="script.js"></script>
 </body>

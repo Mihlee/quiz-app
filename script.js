@@ -207,3 +207,14 @@ const questions = [
         answers: [{ text: "validate", correct: false }, { text: "important", correct: false }, { text: "required", correct: true }, { text: "placeholder", correct: false }]
     }
 ];
+// 1. Find the elements in your HTML
+const homeContainer = document.getElementById("home-container");
+const quizContainer = document.getElementById("quiz-container");
+const startGameBtn = document.getElementById("start-game-btn");
+
+// 2. Make the button transition the screens
+startGameBtn.addEventListener("click", () => {
+    homeContainer.classList.add("hide");     // This hides your landing page
+    quizContainer.classList.remove("hide"); // This brings up the quiz box
+    startQuiz();                            // This kicks off your 50 questions
+});
